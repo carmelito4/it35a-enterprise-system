@@ -1,0 +1,83 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('image/gta-5-background-o5zqq1pkpmdbw2yt.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Change text color to white for better contrast */
+}
+
+p {
+    color: rgb(230, 230, 230); /* Lighter gray text for better readability */
+    font-style: Arial;
+    font-size: 20px;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8); /* Darker transparent background for header */
+    color: #ffcc00; /* Golden color for the header text */
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-Left .logo {
+    color: #ffcc00; /* Golden color for logo */
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header-Right a {
+    color: #ffcc00; /* Golden color for links in header */
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.header-Right a.active {
+    font-weight: bold;
+}
+
+section {
+    padding: 80px 20px 20px; /* Extra top padding to account for fixed header */
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent dark background for content */
+    color: #fff; /* White text inside the section */
+    margin: 0 auto;
+    max-width: 800px;
+    border-radius: 8px;
+}
+
+footer {
+    background: rgba(34, 193, 195, 0.7); /* Teal/blueish transparent background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Add media query for responsiveness */
+@media (max-width: 768px) {
+    .header-Right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header-Right a {
+        margin: 10px 0;
+    }
+}
